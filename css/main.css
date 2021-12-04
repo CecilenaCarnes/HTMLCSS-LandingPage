@@ -293,8 +293,8 @@ footer:after{
     margin-bottom: 15px;
 }
 
-footer a{
-    color: white;
+footer a {
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 12px;
     padding: 0 0 4px;
@@ -314,9 +314,7 @@ footer a:hoover {text-decoration:underline;}
     background-position: center;
 }
 
-.twitter{
-    background-image: url("../img/twitter.svg");
-}
+.twitter{background-image: url("../img/twitter.svg");}
 
 .facebook{
     background-image: url("../img/facebook.svg");
@@ -326,7 +324,7 @@ footer a:hoover {text-decoration:underline;}
     background-image: url("../img/instagram.svg")
 }
 
-.pintrest{
+.pinterest{
     background-image: url("../img/pinterest.svg");
 }
 
