@@ -258,33 +258,32 @@ section { display: flex;}
 }
 
 
-.footer {
-    flex: felx-wrap wrap;
+footer {
+    display: flex;
+   background-color: #000000;
     position: relative;
     z-index: 0;
     min-height: 330px;
-    background-color: black;
+   flex-wrap:wrap;
 }
 
-.footer:after{
+footer:after{
+    content: "";
     background-color: #a0a0a0;
     width: 75%;
-    position:absolute;
-    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
 }
 
-.footer-sidebar {
-    flex: felx-wrap wrap;
-    position: relative;
-    z-index: 0;
-    min-height: 330px;
-    background-color: black;
-}
+
 
 .lists {
     flex: 0 0 75%;
-    column-gap: 15px 40px;
+    padding: 40px 15px;
 }
 
 .link-header {
@@ -294,13 +293,14 @@ section { display: flex;}
     margin-bottom: 15px;
 }
 
-.link-header a{
+footer a{
     color: white;
     text-transform: uppercase;
     font-size: 12px;
     padding: 0 0 4px;
-    text-decoration: underline;
 }
+
+footer a:hoover {text-decoration:underline;}
 
 .social ul li{
     display: inline-block;
@@ -310,7 +310,7 @@ section { display: flex;}
     display: block;
     width: 23px;
     height: 23px;
-    background-size: 23px;
+    background-size: 23px 23px;
     background-position: center;
 }
 
@@ -331,18 +331,14 @@ section { display: flex;}
 }
 
 
-.newsletter{
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-.link-header{
+.newsletter .link-header{
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
-.link-subheader{
+
+.newsletter .link-subheader{
     font-style: italic;
     font-size: 12px;
     font-weight: 400;
@@ -350,13 +346,13 @@ section { display: flex;}
 }
 
 
-.newspaper-input{
+.newspaper input{
     border: 1px solid #364147;
     width: 200px;
     margin-bottom: 10px;
 }
 
-.newspaper-button{
+.newspaper button{
     width: 150px;
     min-width: auto;
     text-transform: uppercase;
@@ -368,9 +364,9 @@ section { display: flex;}
     padding: 40px 0;
     color: #e5e5e5;
     font-size: 16px;
-    max-width: 230px;
-}
+    }
 
+    .ps img{max-width: 230px;}
 .demo{
     padding: 0 30px;
 }
@@ -380,7 +376,7 @@ section { display: flex;}
     display: block;
     width: 100%;
     height: 1px;
-    margin: 30px;
+    margin: 30px 0;
     background: linear-gradient(to right,#f05a28 0,#e80a89 100%)
     }
 
@@ -388,7 +384,7 @@ section { display: flex;}
     flex: 0 0 75%;
     padding: 10px 0;
     font-size: 12px;
-    align-items: center;
+    text-align: center;
 }
 
 
